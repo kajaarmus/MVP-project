@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const { check, validationResult } = require('express-validator');
 
-const app = express();
+const app = require('../frontend/my-app/src/App.js');
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB

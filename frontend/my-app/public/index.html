@@ -40,6 +40,31 @@
       <div class="row mt-4" id="portfolioCards">
         <!-- Cards will be dynamically added here -->
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const portfolioData = [
+                { title: 'Tattoo Portfolio', image: 'tattoos.jpg',  src: './src/tattoo-portfolio.html' },
+                { title: 'Available Designs', image: 'available.jpg', src: './src/available-designs.html' },
+                { title: 'Crafts Portfolio', image: 'crafts.jpg', src: './src/crafts-portfolio.html' }
+            ];
+
+            const portfolioCardsContainer = document.getElementById('portfolioCards');
+            portfolioData.forEach(item => {
+                const cardHtml = `
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="${item.image}" class="card-img-top" alt="${item.title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${item.title}</h5>
+                                <a href="${item.src}" class="btn btn-primary">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                portfolioCardsContainer.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        });
+    </script>
     </div>
      <!-- Homepage -->
   <div class="container mt-4">

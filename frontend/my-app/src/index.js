@@ -55,7 +55,7 @@ portfolioData.forEach(item => {
         <img src="${item.image}" class="card-img-top" alt="${item.title}">
         <div class="card-body">
           <h5 class="card-title">${item.title}</h5>
-          <a href="${item.link}" class="btn btn-primary">View Portfolio</a>
+          <a href="#" class="btn btn-primary">View Portfolio</a>
         </div>
       </div>
     </div>

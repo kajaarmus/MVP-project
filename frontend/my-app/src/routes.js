@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const { check, validationResult } = require('express-validator');
-const User = require('./models/User');
+const User = require('../src/models/User');
 
 // Signup route
 router.post('/signup', [

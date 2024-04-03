@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "node": "^18.20.0"
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.2.4",
+    "node": "^18.20.0",
+    "validator": "^13.11.0"
   }
 }
